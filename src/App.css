@@ -1,5 +1,7 @@
 .app_container {
-
-  max-width: 1080px;
-  margin: 20px auto;
+    width: 100%;
+    background-image: url("/public/images/weather-background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
