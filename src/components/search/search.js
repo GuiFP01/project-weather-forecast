@@ -41,8 +41,8 @@ const Search = ({onSearchChange}) => {
         }),
         option: (provided, state) => ({
             ...provided,
-            backgroundColor: state.isFocused ? '#3699FF' : null,
-            color: state.isFocused ? 'white' : null,
+            backgroundColor: state.isFocused ? 'rgba(0,250,250,.3)' : null,
+            color: state.isFocused ? 'black' : null,
         }),
     }
 

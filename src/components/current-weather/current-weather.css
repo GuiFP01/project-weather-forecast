@@ -12,7 +12,7 @@
 
 .top-weather-info {
 
-    margin: auto 0;
+    margin: auto 0 auto 10%;
 }
 
 .city-name {
@@ -40,16 +40,20 @@
     margin: 10px 0;
 }
 
+.temperature-icon-info {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around
+}
 
 .icon-weather-info {
 
-    display: flex;
-    margin: 4.5% 0 0 3%;
+    margin: 4.5% 0 0 6%;
 }
 .weather-icon {
 
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .bottom-weather-info {
@@ -81,14 +85,14 @@
 
 .parameter-label {
     text-align: left;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 20px;
     margin: auto 0;
 }
 
 .parameter-value {
     text-align: right;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 25px;
     margin: auto 0;
 }

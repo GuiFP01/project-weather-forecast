@@ -6,18 +6,21 @@ const CurrentWeather = ({data}) => {
     return (
 
         <div className="weather-container">
-
+            
             <div className="top-weather-info">
                 <div className="city-name-and-description">
                     <p className="city-name">{data.city}</p>
                     <p className="city-weather">{data.weather[0].description}</p>
                 </div>
-                <p className="city-temperature">{Math.round(data.main.temp)}°C</p>
+                <div className="temperature-icon-info">
+                    <p className="city-temperature">{Math.round(data.main.temp)}°C</p>
+                    <div className="icon-weather-info">
+                        <img alt="weather-icon" className="weather-icon" src={`icons/${data.weather[0].icon}.png`}/>
+                    </div>
+                </div>
             </div>
 
-            <div className="icon-weather-info">
-                <img alt="weather-icon" className="weather-icon" src={`icons/${data.weather[0].icon}.png`}/>
-            </div>
+
 
             <div className="bottom-weather-info">
                 <div className="city-weather-parameters">
